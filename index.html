@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="centrarH">
+        <div id="calculadora">
+            <div id="titulo">
+                <h1 id="tituloU">UAO</h1>
+                <h1 id="tituloC"> CALCULADORA</h1>
+            </div>
+            <div id="datos">
+                <div>
+                    <p id="numeroText">Número 1</p>
+                    <input id="numero1" class="numero" type="text">
+                    <p id="numeroText">Número 2</p>
+                    <input id="numero2" class="numero" type="text">
+
+                    <div id="operacion">
+                        <p id="operacionText">Operación</p>
+                        <button id="btnOperacion" class="margin" onclick="accion()">
+                            <img id="flecha" src="flacha-abajo.png" alt="">
+                            <p id="op" class="texto desaparece" onclick="operacion('sumar')"> Sumar </p>
+                            <p id="op" class="texto desaparece" onclick="operacion('restar')"> Restar </p>
+                            <p id="op" class="texto desaparece" onclick="operacion('multiplicar')"> Multiplicar </p>
+                            <p id="op" class="texto desaparece" onclick="operacion('dividir')"> Dividir </p>
+                        </button>
+                    </div>
+                </div>
+                <div id="igual">
+                    <button id="btnIgual">=</button>
+                    <textarea id="resultado" cols="6" rows="2" readonly> </textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+
+</html>
